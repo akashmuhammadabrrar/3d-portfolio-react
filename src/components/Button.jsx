@@ -6,10 +6,13 @@ function Button({ text, className, id }) {
                 e.preventDefault();
                 const target = document.getElementById("counter");
                 if (target && id) {
-                    const offset = window.innerHeight * 0.15;
-                    const top = target = getBoundingClientRect().top + window.scrollY - offset;
-                    window.scrollTo({ top, behavior: "smooth" })
-                }
+  const offset = window.innerHeight * 0.15;
+  const top =
+    target.getBoundingClientRect().top + window.scrollY - offset;
+
+  window.scrollTo({ top, behavior: "smooth" });
+}
+
 
             }}
             className={`${className ?? ""} cta-wrapper`}>
