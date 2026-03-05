@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {expCards} from "../../constants/index"
+import { expCards } from "../../constants/index"
 
 import TitleHeader from "../../components/sections/TitleHeader";
 import GlowCard from "../../components/GlowCard";
@@ -127,7 +127,7 @@ const Experience = () => {
                         </p>
                         <p className="text-[#839CB5] italic">
                           Responsibilities
-                        </p>                
+                        </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map(
                             (responsibility, index) => (

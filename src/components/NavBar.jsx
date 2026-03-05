@@ -20,7 +20,7 @@ function NavBar() {
         <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
             <div className="inner">
                 <a className="logo" href="#hero">
-                    Akash | Abrrar
+                    <img className="w-12 h-12" src="/images/logo.png" alt="" />
                 </a>
                 <nav className="desktop">
                     <ul>
