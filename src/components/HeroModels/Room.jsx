@@ -7,6 +7,7 @@ import * as THREE from "three";
 export function Room(props) {
   const { nodes, materials } = useGLTF("/models/optimized-room.glb");
   const screensRef = useRef();
+  const [dummyLight] = React.useState(() => new THREE.AmbientLight(0xffffff, 0));
   const matcapTexture = useTexture("/images/textures/mat1.png");
 
   const curtainMaterial = new THREE.MeshPhongMaterial({
@@ -41,6 +42,7 @@ export function Room(props) {
     <group {...props} dispose={null}>
       <EffectComposer>
         <SelectiveBloom
+          lights={[dummyLight]}
           selection={screensRef}
           intensity={1.5} // Strength of the bloom
           luminanceThreshold={0.2} // Minimum luminance needed

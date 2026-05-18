@@ -1,6 +1,5 @@
 import TitleHeader from './TitleHeader'
-import { techStackIcons, techStackImgs } from '../../constants'
-import TechIcon from '../Moldels/TechIcon'
+import { techStackIcons } from '../../constants'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
@@ -38,7 +37,11 @@ function TechStack() {
               <div className="tech-card-animated-bg" />
               <div className='tech-card-content'>
                 <div className='tech-icon-wrapper'>
-                  <TechIcon model={icon} />
+                  <img 
+                    src={icon.imgPath} 
+                    alt={icon.name} 
+                    className="w-24 h-24 md:w-28 md:h-28 object-contain transition-transform duration-500 ease-in-out group-hover:scale-110 select-none pointer-events-none"
+                  />
                 </div>
 
                 <div className="padding-x w-full">
@@ -47,20 +50,6 @@ function TechStack() {
               </div>
             </div>
           ))}
-          {/* 
-          {techStackImgs.map((icon) =>
-            <div key={icon.id} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
-              <div className="tech-card-animated-bg" />
-              <div className='tech-card-content'>
-                <div className='tech-icon-wrapper'>
-                  <img src={icon.imgPath} />
-                </div>
-                <div className='padding-x w-full'>
-                  <p>{icon.name}</p>
-                </div>
-              </div>
-            </div>
-          )} */}
         </div>
       </div>
     </div>

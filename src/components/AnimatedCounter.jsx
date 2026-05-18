@@ -6,9 +6,9 @@ function AnimatedCounter() {
         <div className="p-10">
             <div id="counter" className="padding-x-lg xl:mt-0 mt-32">
                 <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {counterItems.map((item) => (
+                    {counterItems.map((item, index) => (
                         <div
-                            key={item.id}
+                            key={index}
                             className="bg-zinc-900 rounded-lg p-8 flex items-center justify-center"
                         >
                             <div className="counter-number text-white text-5xl font-bold">

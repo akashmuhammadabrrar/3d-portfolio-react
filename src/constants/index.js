@@ -29,45 +29,60 @@ const words = [
 ];
 
 const counterItems = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
+    { value: 2, suffix: "+", label: "Years of Experience" },
+    { value: 20, suffix: "+", label: "Satisfied Clients" },
+    { value: 22, suffix: "+", label: "Completed Projects" },
     { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
     {
-        imgPath: "/images/logos/company-logo-1.png",
+        name: "Netlify",
+        imgPath: "/images/logos/netlify.png",
     },
     {
-        imgPath: "/images/logos/company-logo-2.png",
+        name: "Softvence",
+        imgPath: "/images/logos/softvence.png",
     },
     {
-        imgPath: "/images/logos/company-logo-3.png",
+        name: "Next.js",
+        imgPath: "/images/logos/nextJs.png",
     },
     {
-        imgPath: "/images/logos/company-logo-4.png",
+        name: "Vercel",
+        imgPath: "/images/logos/vercel.svg",
     },
     {
-        imgPath: "/images/logos/company-logo-5.png",
+        name: "Netlify",
+        imgPath: "/images/logos/netlify.png",
     },
     {
-        imgPath: "/images/logos/company-logo-6.png",
+        name: "Softvence",
+        imgPath: "/images/logos/softvence.png",
     },
     {
-        imgPath: "/images/logos/company-logo-7.png",
+        name: "Next.js",
+        imgPath: "/images/logos/nextJs.png",
     },
     {
-        imgPath: "/images/logos/company-logo-8.png",
+        name: "Vercel",
+        imgPath: "/images/logos/vercel.svg",
     },
     {
-        imgPath: "/images/logos/company-logo-9.png",
+        name: "Netlify",
+        imgPath: "/images/logos/netlify.png",
     },
     {
-        imgPath: "/images/logos/company-logo-10.png",
+        name: "Softvence",
+        imgPath: "/images/logos/softvence.png",
     },
     {
-        imgPath: "/images/logos/company-logo-11.png",
+        name: "Next.js",
+        imgPath: "/images/logos/nextJs.png",
+    },
+    {
+        name: "Vercel",
+        imgPath: "/images/logos/vercel.svg",
     },
 ];
 
@@ -91,7 +106,7 @@ const abilities = [
 
 const techStackImgs = [
     {
-        name: "React Developer",
+        name: "React & Next js",
         imgPath: "/images/logos/react.png",
     },
     {
@@ -114,44 +129,39 @@ const techStackImgs = [
 
 const techStackIcons = [
     {
-        name: "React Developer",
-        modelPath: "/models/react_logo-transformed.glb",
-        scale: 1,
-        rotation: [0, 0, 0],
+        id: "react",
+        name: "React & Next js",
+        imgPath: "/images/logos/react.png",
     },
     {
-        name: "Python Developer",
-        modelPath: "/models/python-transformed.glb",
-        scale: 0.8,
-        rotation: [0, 0, 0],
+        id: "typescript",
+        name: "Typescript and JS",
+        imgPath: "/images/logos/typescript.png",
     },
     {
-        name: "Backend Developer",
-        modelPath: "/models/node-transformed.glb",
-        scale: 5,
-        rotation: [0, -Math.PI / 2, 0],
+        id: "node",
+        name: "Familiar with Backend",
+        imgPath: "/images/logos/node.png",
     },
     {
+        id: "three",
         name: "Interactive Developer",
-        modelPath: "/models/three.js-transformed.glb",
-        scale: 0.05,
-        rotation: [0, 0, 0],
+        imgPath: "/images/logos/three.png",
     },
     {
-        name: "Project Manager",
-        modelPath: "/models/git-svg-transformed.glb",
-        scale: 0.05,
-        rotation: [0, -Math.PI / 4, 0],
+        id: "git",
+        name: "Team Collaborator",
+        imgPath: "/images/logos/git.svg",
     },
 ];
 
 const expCards = [
     {
-        review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
+        review: "He brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+        imgPath: "/images/logos/react.png",
+        logoPath: "/images/logos/nextJs.png",
         title: "Frontend Developer",
-        date: "January 2023 - Present",
+        date: "June 2024 - Present",
         responsibilities: [
             "Developed and maintained user-facing features for the Hostinger website.",
             "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
@@ -159,27 +169,27 @@ const expCards = [
         ],
     },
     {
-        review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
+        review: "His expertise in backend engineering was key to our platform's success. He designed highly efficient database systems and built APIs that scaled seamlessly.",
+        imgPath: "/images/logos/node.png",
+        logoPath: "/images/logos/node.png",
         title: "Full Stack Developer",
-        date: "June 2020 - December 2023",
+        date: "April 2025 - Present",
         responsibilities: [
-            "Led the development of Docker's web applications, focusing on scalability.",
-            "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-            "Contributed to open-source projects that were used with the Docker ecosystem.",
+            "Designed and implemented robust, scalable RESTful APIs using Node.js and Express.",
+            "Managed relational database schema modeling and migrations using PostgreSQL and Prisma ORM.",
+            "Optimized database query performance, connection pooling, and secure API middleware integrations.",
         ],
     },
     {
-        review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "React Native Developer",
-        date: "March 2019 - May 2020",
+        review: "He designed solid and robust system architectures that greatly improved our data flows and system reliability under high load conditions.",
+        imgPath: "/images/logos/appwrite.png",
+        logoPath: "/images/logos/appwrite.png",
+        title: "System Design",
+        date: "January 2026 - Present",
         responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            "Improved app performance and user experience through code optimization and testing.",
-            "Coordinated with the product team to implement features based on feedback.",
+            "Architected highly scalable and distributed system topologies using microservices.",
+            "Designed robust caching strategies, message queues, and load balancing mechanisms to handle high-traffic loads.",
+            "Collaborated with cross-functional teams to define system level constraints, data flow, and recovery protocols.",
         ],
     },
 ];

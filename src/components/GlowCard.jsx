@@ -1,11 +1,11 @@
 
 import React, { useRef } from "react";
 
-function GlowCard({ card, children, index }) {
-  const cardRefs = useRef([]);
+function GlowCard({ card, children }) {
+  const cardRef = useRef(null);
 
-  const handleMouseMove = (e, index) => {
-    const cardEl = cardRefs.current[index];
+  const handleMouseMove = (e) => {
+    const cardEl = cardRef.current;
     if (!cardEl) return;
 
     const rect = cardEl.getBoundingClientRect();
@@ -21,8 +21,8 @@ function GlowCard({ card, children, index }) {
 
   return (
     <div
-      ref={(el) => (cardRefs.current[index] = el)}
-      onMouseMove={(e) => handleMouseMove(e, index)}
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
     >
       <div className="glow" />
