@@ -16,8 +16,8 @@ function Testimonials() {
                     {testimonials.map(({ imgPath, name, mentions, review }) => (
                         <GlowCard card={{ review }}>
                             <div className='flex items-center gap-3'>
-                                <div>
-                                    <img src={imgPath} alt={name} />
+                                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#cd7c2e] text-white font-bold text-xl">
+                                    {name.split(' ').map(n => n[0]).join('')}
                                 </div>
                                 <div>
                                     <p className='font-bold'>{name}</p>

@@ -211,45 +211,45 @@ const expLogos = [
 
 const testimonials = [
     {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
+        name: "Sarah Jenkins",
+        mentions: "@sarahj_design",
         review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+            "Akash brought our design to life beautifully. His attention to detail on the frontend is incredible. The animations and 3D elements he integrated made our website stand out from the competition.",
         imgPath: "/images/client1.png",
     },
     {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
+        name: "Michael Chen",
+        mentions: "@mikechen_tech",
         review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+            "Working with Akash was a fantastic experience. He transformed our Figma designs into a pixel-perfect, highly responsive frontend. The user interface is sleek, modern, and performs exceptionally well.",
         imgPath: "/images/client3.png",
     },
     {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
+        name: "Emily Rodriguez",
+        mentions: "@emily_creative",
         review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+            "I was amazed by the frontend architecture Akash built for us. He not only nailed the aesthetics but also ensured the website was accessible and lightning fast. The 3D interactive features are a game-changer.",
         imgPath: "/images/client2.png",
     },
     {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
+        name: "David Smith",
+        mentions: "@davidsmith_dev",
         review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+            "Akash is a phenomenal frontend developer. He turned our complex UI requirements into a smooth, intuitive platform. His eye for design and expertise in modern web technologies truly set him apart.",
         imgPath: "/images/client5.png",
     },
     {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
+        name: "Jessica Taylor",
+        mentions: "@jtaylor_marketing",
         review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+            "The landing page Akash developed for us completely elevated our brand. The transitions are seamless, and the overall design feels premium and state-of-the-art. Highly recommend his frontend skills!",
         imgPath: "/images/client4.png",
     },
     {
-        name: "Albert Flores",
-        mentions: "@albertflores",
+        name: "Robert Fox",
+        mentions: "@robertfox_ui",
         review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+            "Akash was a pleasure to work with. He understood our UI/UX requirements perfectly and delivered a frontend that exceeded our expectations. His skills in React and 3D web development are top-notch.",
         imgPath: "/images/client6.png",
     },
 ];

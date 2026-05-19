@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar"
 import ExperienceSection from "./components/sections/ExperienceSection"
 import FeatureCards from "./components/sections/FeatureCards"
 import Hero from "./components/sections/Hero"
+import AboutMe from "./components/sections/AboutMe"
 import LogoSection from "./components/sections/LogoSection"
 import ShowCaseSection from "./components/sections/ShowCaseSection"
 import TechStack from "./components/sections/TechStack"
@@ -29,6 +30,7 @@ function App() {
       <Toaster richColors position="bottom-right" />
       <NavBar />
       <Hero />
+      <AboutMe />
       <ShowCaseSection />
       <LogoSection />
       <FeatureCards />
