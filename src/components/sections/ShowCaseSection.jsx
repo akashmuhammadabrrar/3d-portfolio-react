@@ -165,33 +165,35 @@ const AppShowcase = () => {
                     {/* First Project: Kilian Rohde */}
                     <div 
                         ref={rydeRef} 
-                        className="first-project-wrapper cursor-pointer group relative"
+                        className="first-project-wrapper cursor-pointer group relative rounded-xl border border-white/10 overflow-hidden"
                         onClick={() => setActiveProject(projects[0])}
                     >
-                        <div className="image-wrapper overflow-hidden rounded-xl relative">
+                        <div className="image-wrapper relative">
                             <img 
                                 src={projects[0].images[0]} 
                                 alt={projects[0].title}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
-                            {/* Hover badge */}
-                            <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-3 py-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1.5">
-                                <span>View Details</span>
-                                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                                </svg>
+                            {/* Hover overlay */}
+                            <div className="absolute inset-0 bg-black/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-8">
+                                <div className="space-y-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                    <div>
+                                        <span className="px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded">
+                                            Featured Commercial
+                                        </span>
+                                    </div>
+                                    <h2 className="text-xl md:text-3xl font-bold text-white mt-2">{projects[0].title}</h2>
+                                    <p className="text-xs md:text-sm text-white-50 leading-relaxed max-w-xl">
+                                        {projects[0].subtitle}
+                                    </p>
+                                    <div className="pt-2 flex items-center gap-1.5 text-xs font-semibold text-emerald-400">
+                                        <span>View Project Details</span>
+                                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="text-content">
-                            <div className="flex items-center gap-2">
-                                <span className="px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded">
-                                    Featured Commercial
-                                </span>
-                            </div>
-                            <h2>{projects[0].title}</h2>
-                            <p className="text-white-50 md:text-xl">
-                                {projects[0].subtitle}
-                            </p>
                         </div>
                     </div>
 
@@ -199,57 +201,71 @@ const AppShowcase = () => {
                     <div className="project-list-wrapper overflow-hidden">
                         {/* Project 2: Saif syn */}
                         <div 
-                            className="project cursor-pointer group relative" 
+                            className="project cursor-pointer group relative rounded-xl border border-white/10 overflow-hidden" 
                             ref={libraryRef}
                             onClick={() => setActiveProject(projects[1])}
                         >
-                            <div className="image-wrapper bg-[#FFEFDB] overflow-hidden rounded-xl relative border border-white/5">
+                            <div className="image-wrapper relative">
                                 <img
                                     src={projects[1].images[0]}
                                     alt={projects[1].title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                {/* Hover badge */}
-                                <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2.5 py-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1">
-                                    <span>View Details</span>
-                                    <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                                    </svg>
+                                {/* Hover overlay */}
+                                <div className="absolute inset-0 bg-black/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-5 md:p-6">
+                                    <div className="space-y-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                        <div>
+                                            <span className="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded">
+                                                Fintech & AI
+                                            </span>
+                                        </div>
+                                        <h2 className="text-lg md:text-xl font-bold text-white mt-1">{projects[1].title}</h2>
+                                        <p className="text-xs text-white-50 leading-relaxed">
+                                            {projects[1].subtitle}
+                                        </p>
+                                        <div className="pt-1.5 flex items-center gap-1.5 text-xs font-semibold text-blue-400">
+                                            <span>View Project Details</span>
+                                            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="mt-3">
-                                <span className="text-[10px] font-semibold uppercase tracking-wider text-blue-400 bg-blue-500/10 border border-blue-500/20 px-1.5 py-0.5 rounded">
-                                    Fintech & AI
-                                </span>
-                                <h2>{projects[1].title}</h2>
                             </div>
                         </div>
 
                         {/* Project 3: Caroline */}
                         <div 
-                            className="project cursor-pointer group relative" 
+                            className="project cursor-pointer group relative rounded-xl border border-white/10 overflow-hidden" 
                             ref={ycDirectoryRef}
                             onClick={() => setActiveProject(projects[2])}
                         >
-                            <div className="image-wrapper bg-[#FFE7EB] overflow-hidden rounded-xl relative border border-white/5">
+                            <div className="image-wrapper relative">
                                 <img 
                                     src={projects[2].images[0]} 
                                     alt={projects[2].title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                {/* Hover badge */}
-                                <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2.5 py-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-full text-xs font-medium text-white flex items-center gap-1">
-                                    <span>View Details</span>
-                                    <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                                    </svg>
+                                {/* Hover overlay */}
+                                <div className="absolute inset-0 bg-black/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-5 md:p-6">
+                                    <div className="space-y-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                        <div>
+                                            <span className="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-purple-400 bg-purple-500/10 border border-purple-500/20 rounded">
+                                                Management System
+                                            </span>
+                                        </div>
+                                        <h2 className="text-lg md:text-xl font-bold text-white mt-1">{projects[2].title}</h2>
+                                        <p className="text-xs text-white-50 leading-relaxed">
+                                            {projects[2].subtitle}
+                                        </p>
+                                        <div className="pt-1.5 flex items-center gap-1.5 text-xs font-semibold text-purple-400">
+                                            <span>View Project Details</span>
+                                            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="mt-3">
-                                <span className="text-[10px] font-semibold uppercase tracking-wider text-purple-400 bg-purple-500/10 border border-purple-500/20 px-1.5 py-0.5 rounded">
-                                    Management System
-                                </span>
-                                <h2>{projects[2].title}</h2>
                             </div>
                         </div>
                     </div>
