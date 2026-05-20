@@ -13,7 +13,7 @@ function Testimonials() {
                 />
 
                 <div className='lg:columns-3 md:columns-2 columns-1 mt-16'>
-                    {testimonials.map(({ imgPath, name, mentions, review }) => (
+                    {testimonials.map(({ name, mentions, review }) => (
                         <GlowCard card={{ review }}>
                             <div className='flex items-center gap-3'>
                                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#cd7c2e] text-white font-bold text-xl">
