@@ -48,13 +48,10 @@ function AboutMe() {
 
                             <div className="text-white-50 text-lg leading-relaxed space-y-6 relative z-10">
                                 <p>
-                                    As a passionate and detail-oriented Frontend Developer, my core objective is to build accessible, beautifully designed, and highly performant digital applications. I specialize in taking complex UI/UX designs and translating them into dynamic, interactive experiences using modern web technologies like React, Next.js, and Three.js.
+                                    My name is <strong>Akash Muhammad Abrrar</strong>, a dynamic Frontend Engineer specializing in architecting modern, high-performance, and mobile-first web platforms. With deep expertise in JavaScript, TypeScript, React.js, and Next.js, I bridge the gap between complex UI/UX design and robust, scalable technical implementations. I specialize in building highly responsive layouts, integrating sophisticated APIs, and designing optimized frontend architectures complete with immersive interactive elements and smooth animations.
                                 </p>
                                 <p>
-                                    I thrive in collaborative, fast-paced environments where I can leverage my problem-solving skills to overcome technical challenges. Whether it's integrating complex 3D animations, optimizing rendering performance, or establishing a robust component architecture, I am driven by a desire to push the boundaries of what is possible on the web.
-                                </p>
-                                <p>
-                                    My goal is to continuously grow as an engineer, combining aesthetics with rock-solid code to deliver lasting impact for users and the businesses that serve them. Let's create something extraordinary together!
+                                    A unique facet of my professional profile is my academic degree in Philosophy. This rigorous training has directly sharpened my critical thinking, logical analysis, and complex problem-solving abilities. In software engineering, this translates to an exceptional capacity for structuring clean code, debugging intricate issues, and approaching complex architecture with a highly disciplined, analytical mindset.
                                 </p>
                             </div>
                         </div>
