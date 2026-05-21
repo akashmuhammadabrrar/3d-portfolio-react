@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
                 <div className="flex flex-col justify-center md:items-start items-center">
-                    <a href="">Visit My Blogs</a>
+                    {/* Placeholder for layout balance */}
                 </div>
                 <div className="socials">
                     {socialImgs.map((img) => (
