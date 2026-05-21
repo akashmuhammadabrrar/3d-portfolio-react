@@ -51,7 +51,7 @@ function AboutMe() {
                                     My name is <strong>Akash Muhammad Abrrar</strong>, a dynamic Frontend Engineer specializing in architecting modern, high-performance, and mobile-first web platforms. With deep expertise in JavaScript, TypeScript, React.js, and Next.js, I bridge the gap between complex UI/UX design and robust, scalable technical implementations. I specialize in building highly responsive layouts, integrating sophisticated APIs, and designing optimized frontend architectures complete with immersive interactive elements and smooth animations.
                                 </p>
                                 <p>
-                                    A unique facet of my professional profile is my academic degree in Philosophy. This rigorous training has directly sharpened my critical thinking, logical analysis, and complex problem-solving abilities. In software engineering, this translates to an exceptional capacity for structuring clean code, debugging intricate issues, and approaching complex architecture with a highly disciplined, analytical mindset.
+                                    My philosophy background shapes my engineering. It refined my logic and critical thinking, enabling me to write highly structured code, design clean architectures, and tackle complex debugging with rigorous precision.
                                 </p>
                             </div>
                         </div>
