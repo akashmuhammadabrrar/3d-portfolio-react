@@ -38,9 +38,9 @@ function NavBar() {
                 {/* Desktop Navigation */}
                 <nav className="desktop">
                     <ul>
-                        {navLinks.map(({ name, link }) => (
+                        {navLinks.map(({ name, link, isDownload }) => (
                             <li key={name} className="group">
-                                <a href={link}>
+                                <a href={link} {...(isDownload ? { download: "Akash_Resume.pdf", target: "_blank" } : {})}>
                                     <span>{name}</span>
                                     <span className="underline" />
                                 </a>
@@ -83,10 +83,11 @@ function NavBar() {
                 className={`fixed top-0 right-0 h-dvh w-[70vw] sm:w-[50vw] bg-black/80 backdrop-blur-2xl border-l border-white/10 z-[105] lg:hidden transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col pt-32 px-8 shadow-2xl`}
             >
                 <nav className="flex flex-col gap-8">
-                    {navLinks.map(({ name, link }) => (
+                    {navLinks.map(({ name, link, isDownload }) => (
                         <div key={name} className="border-b border-white/5 pb-4 flex">
                             <a 
                                 href={link} 
+                                {...(isDownload ? { download: "Akash_Resume.pdf", target: "_blank" } : {})}
                                 onClick={() => setIsOpen(false)}
                                 className="group relative text-white-50 hover:text-white text-xl font-medium transition-colors"
                             >

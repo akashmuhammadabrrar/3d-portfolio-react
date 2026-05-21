@@ -15,6 +15,11 @@ const navLinks = [
         name: "Testimonials",
         link: "#testimonials",
     },
+    {
+        name: "Download CV",
+        link: "/docs/Akash_Resume.pdf",
+        isDownload: true,
+    },
 ];
 
 const words = [
@@ -241,20 +246,19 @@ const testimonials = [
 
 const socialImgs = [
     {
-        name: "insta",
-        imgPath: "/images/insta.png",
+        name: "x",
+        imgPath: "/images/x.png",
+        url: "https://x.com/i/flow/login?redirect_after_login=%2Fhttps%3A%2Fx.com%2Fakash_madbor9",
     },
     {
         name: "fb",
         imgPath: "/images/fb.png",
-    },
-    {
-        name: "x",
-        imgPath: "/images/x.png",
+        url: "https://www.facebook.com/hmakash.ahmed.96",
     },
     {
         name: "linkedin",
         imgPath: "/images/linkedin.png",
+        url: "https://www.linkedin.com/in/akash-muhammad-abrrar-764275228",
     },
 ];
 

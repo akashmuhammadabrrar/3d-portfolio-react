@@ -47,11 +47,11 @@ const projects = [
             "Designed visually rich dashboards with charts and tables enabling users to easily analyze financial indexes."
         ],
         liveLink: "https://thari.finance/",
-        github: null,
+        github: "https://github.com/akashmuhammadabrrar/saif-syan-frontend.git",
         images: ["/projects_Images/thari.finance_.png", "/projects_Images/thari.finance_user_ai-analysis.png"],
         credentials: {
             admin: {
-                email: "admin@example.com",
+                email: "saifalnaqbi@outlook.com",
                 password: "Password123!"
             },
             user: {
@@ -74,7 +74,7 @@ const projects = [
             "Engineered a responsive scheduling and match progress board, optimizing large tournament brackets and brackets visualization for mobile screens."
         ],
         liveLink: "http://98.81.136.120:3000/",
-        github: null,
+        github: "https://github.com/akashmuhammadabrrar/caroline-frontend.git",
         images: ["/projects_Images/carolineLanding.png", "/projects_Images/carolineAdmin.png"],
         credentials: {
             admin: {
