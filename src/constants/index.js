@@ -260,6 +260,11 @@ const socialImgs = [
         imgPath: "/images/linkedin.png",
         url: "https://www.linkedin.com/in/akash-muhammad-abrrar-764275228",
     },
+    {
+        name: "github",
+        imgPath: "/images/github.svg",
+        url: "https://github.com/akashmuhammadabrrar",
+    },
 ];
 
 export {
